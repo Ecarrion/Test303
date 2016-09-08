@@ -11,7 +11,12 @@
 		2641DACB1D81FE9700957994 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2641DACA1D81FE9700957994 /* AppDelegate.swift */; };
 		2641DAD21D81FE9700957994 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2641DAD11D81FE9700957994 /* Assets.xcassets */; };
 		2641DAD51D81FE9700957994 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2641DAD31D81FE9700957994 /* LaunchScreen.storyboard */; };
-		2641DAE01D81FE9700957994 /* Test303Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2641DADF1D81FE9700957994 /* Test303Tests.swift */; };
+		2641DAED1D81FFD400957994 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2641DAEB1D81FFD400957994 /* API.swift */; };
+		2641DAEE1D81FFD400957994 /* UsersAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2641DAEC1D81FFD400957994 /* UsersAPI.swift */; };
+		2641DAF41D82000500957994 /* UsersApiTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2641DAF21D82000500957994 /* UsersApiTest.swift */; };
+		2641DAF71D8200FA00957994 /* UserEntitiy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2641DAF61D8200FA00957994 /* UserEntitiy.swift */; };
+		2641DAFB1D82026000957994 /* UserEntityTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2641DAFA1D82026000957994 /* UserEntityTest.swift */; };
+		2641DAFD1D82028900957994 /* test-users.json in Resources */ = {isa = PBXBuildFile; fileRef = 2641DAFC1D82028900957994 /* test-users.json */; };
 		F562ACCA89833FD32B4987A3 /* Pods_Test303Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8C0ABE8D1A5F7B0935927D4 /* Pods_Test303Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,8 +38,13 @@
 		2641DAD41D81FE9700957994 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2641DAD61D81FE9700957994 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2641DADB1D81FE9700957994 /* Test303Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Test303Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2641DADF1D81FE9700957994 /* Test303Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test303Tests.swift; sourceTree = "<group>"; };
 		2641DAE11D81FE9700957994 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2641DAEB1D81FFD400957994 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		2641DAEC1D81FFD400957994 /* UsersAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersAPI.swift; sourceTree = "<group>"; };
+		2641DAF21D82000500957994 /* UsersApiTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersApiTest.swift; sourceTree = "<group>"; };
+		2641DAF61D8200FA00957994 /* UserEntitiy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserEntitiy.swift; sourceTree = "<group>"; };
+		2641DAFA1D82026000957994 /* UserEntityTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserEntityTest.swift; sourceTree = "<group>"; };
+		2641DAFC1D82028900957994 /* test-users.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "test-users.json"; sourceTree = "<group>"; };
 		3A6E8F09F18A6A466872F5C7 /* Pods-Test303Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test303Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Test303Tests/Pods-Test303Tests.release.xcconfig"; sourceTree = "<group>"; };
 		BD64A52B0149DC5C6D85A6B9 /* Pods-Test303.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test303.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Test303/Pods-Test303.debug.xcconfig"; sourceTree = "<group>"; };
 		C0355DD5A803B57C3802752A /* Pods-Test303Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test303Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Test303Tests/Pods-Test303Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -106,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				2641DACA1D81FE9700957994 /* AppDelegate.swift */,
+				2641DAEA1D81FFD400957994 /* Core */,
 				2641DAD11D81FE9700957994 /* Assets.xcassets */,
 				2641DAD31D81FE9700957994 /* LaunchScreen.storyboard */,
 				2641DAD61D81FE9700957994 /* Info.plist */,
@@ -116,10 +127,62 @@
 		2641DADE1D81FE9700957994 /* Test303Tests */ = {
 			isa = PBXGroup;
 			children = (
-				2641DADF1D81FE9700957994 /* Test303Tests.swift */,
+				2641DAEF1D82000500957994 /* Core */,
 				2641DAE11D81FE9700957994 /* Info.plist */,
 			);
 			path = Test303Tests;
+			sourceTree = "<group>";
+		};
+		2641DAEA1D81FFD400957994 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2641DAF81D82023D00957994 /* Network */,
+				2641DAF51D8200D700957994 /* Entities */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2641DAEF1D82000500957994 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2641DAF91D82024800957994 /* Entities */,
+				2641DAF01D82000500957994 /* Network */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2641DAF01D82000500957994 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2641DAF21D82000500957994 /* UsersApiTest.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2641DAF51D8200D700957994 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				2641DAF61D8200FA00957994 /* UserEntitiy.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		2641DAF81D82023D00957994 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2641DAEB1D81FFD400957994 /* API.swift */,
+				2641DAEC1D81FFD400957994 /* UsersAPI.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		2641DAF91D82024800957994 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				2641DAFC1D82028900957994 /* test-users.json */,
+				2641DAFA1D82026000957994 /* UserEntityTest.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,6 +281,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2641DAFD1D82028900957994 /* test-users.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +385,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2641DAED1D81FFD400957994 /* API.swift in Sources */,
+				2641DAF71D8200FA00957994 /* UserEntitiy.swift in Sources */,
+				2641DAEE1D81FFD400957994 /* UsersAPI.swift in Sources */,
 				2641DACB1D81FE9700957994 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -329,7 +396,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2641DAE01D81FE9700957994 /* Test303Tests.swift in Sources */,
+				2641DAF41D82000500957994 /* UsersApiTest.swift in Sources */,
+				2641DAFB1D82026000957994 /* UserEntityTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
