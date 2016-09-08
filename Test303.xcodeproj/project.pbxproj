@@ -21,6 +21,8 @@
 		2641DB071D82065F00957994 /* UserMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2641DB061D82065F00957994 /* UserMapper.swift */; };
 		2641DB091D8206AB00957994 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2641DB081D8206AB00957994 /* Mapper.swift */; };
 		2641DB0B1D8207F000957994 /* UserMapperTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2641DB0A1D8207F000957994 /* UserMapperTest.swift */; };
+		2641DB0E1D82091900957994 /* UserRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2641DB0D1D82091900957994 /* UserRouter.swift */; };
+		2641DB121D820B1000957994 /* UserRouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2641DB111D820B1000957994 /* UserRouterTest.swift */; };
 		F562ACCA89833FD32B4987A3 /* Pods_Test303Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8C0ABE8D1A5F7B0935927D4 /* Pods_Test303Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +55,8 @@
 		2641DB061D82065F00957994 /* UserMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserMapper.swift; sourceTree = "<group>"; };
 		2641DB081D8206AB00957994 /* Mapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
 		2641DB0A1D8207F000957994 /* UserMapperTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserMapperTest.swift; sourceTree = "<group>"; };
+		2641DB0D1D82091900957994 /* UserRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRouter.swift; sourceTree = "<group>"; };
+		2641DB111D820B1000957994 /* UserRouterTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRouterTest.swift; sourceTree = "<group>"; };
 		3A6E8F09F18A6A466872F5C7 /* Pods-Test303Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test303Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Test303Tests/Pods-Test303Tests.release.xcconfig"; sourceTree = "<group>"; };
 		BD64A52B0149DC5C6D85A6B9 /* Pods-Test303.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test303.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Test303/Pods-Test303.debug.xcconfig"; sourceTree = "<group>"; };
 		C0355DD5A803B57C3802752A /* Pods-Test303Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test303Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Test303Tests/Pods-Test303Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -136,6 +140,7 @@
 		2641DADE1D81FE9700957994 /* Test303Tests */ = {
 			isa = PBXGroup;
 			children = (
+				2641DB0F1D820ACD00957994 /* App */,
 				2641DAEF1D82000500957994 /* Core */,
 				2641DAE11D81FE9700957994 /* Info.plist */,
 			);
@@ -207,6 +212,7 @@
 		2641DB011D82052B00957994 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				2641DB0C1D82090800957994 /* Network */,
 				2641DB051D82065300957994 /* Mappers */,
 				2641DB021D82052B00957994 /* Models */,
 			);
@@ -227,6 +233,30 @@
 				2641DB061D82065F00957994 /* UserMapper.swift */,
 			);
 			path = Mappers;
+			sourceTree = "<group>";
+		};
+		2641DB0C1D82090800957994 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2641DB0D1D82091900957994 /* UserRouter.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2641DB0F1D820ACD00957994 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2641DB101D820ACD00957994 /* Network */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2641DB101D820ACD00957994 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2641DB111D820B1000957994 /* UserRouterTest.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -432,6 +462,7 @@
 				2641DAED1D81FFD400957994 /* API.swift in Sources */,
 				2641DAF71D8200FA00957994 /* UserEntitiy.swift in Sources */,
 				2641DB091D8206AB00957994 /* Mapper.swift in Sources */,
+				2641DB0E1D82091900957994 /* UserRouter.swift in Sources */,
 				2641DAEE1D81FFD400957994 /* UsersAPI.swift in Sources */,
 				2641DB071D82065F00957994 /* UserMapper.swift in Sources */,
 				2641DB041D82059000957994 /* User.swift in Sources */,
@@ -446,6 +477,7 @@
 				2641DAF41D82000500957994 /* UsersApiTest.swift in Sources */,
 				2641DAFB1D82026000957994 /* UserEntityTest.swift in Sources */,
 				2641DB0B1D8207F000957994 /* UserMapperTest.swift in Sources */,
+				2641DB121D820B1000957994 /* UserRouterTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
