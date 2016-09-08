@@ -30,7 +30,7 @@ class UsersAPI: NSObject, HTTPApi {
 
             guard let `self` = self else { return }
             self.manager.request(urlRequest)
-                .responseData { response in
+                .responseJSON { response in
                     self.resolve(observer, value: response.result.value, error: response.result.error)
             }
         })
