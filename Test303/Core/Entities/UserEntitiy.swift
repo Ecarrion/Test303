@@ -11,9 +11,9 @@ import SwiftyJSON
 
 struct UserEntity {
     
-    let firstName: String
-    let lastName: String
-    let city: String
+    var firstName: String
+    var lastName: String
+    var city: String
     
     init(json: [String: AnyObject]) {
         
