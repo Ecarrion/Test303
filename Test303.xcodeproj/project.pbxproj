@@ -10,6 +10,9 @@
 		1AA85EBF715278209939B156 /* Pods_Test303.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDDB82CE6C3746DCCFD25D1A /* Pods_Test303.framework */; };
 		262AF3761D821CD600171AC2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262AF3741D821CD600171AC2 /* MainViewController.swift */; };
 		262AF3771D821CD600171AC2 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 262AF3751D821CD600171AC2 /* MainViewController.xib */; };
+		262AF3791D8316E100171AC2 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262AF3781D8316E100171AC2 /* UserViewModel.swift */; };
+		262AF37C1D83212000171AC2 /* UserViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262AF37B1D83212000171AC2 /* UserViewModelTest.swift */; };
+		262AF37E1D8321EB00171AC2 /* UsersDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262AF37D1D8321EB00171AC2 /* UsersDataSource.swift */; };
 		2641DACB1D81FE9700957994 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2641DACA1D81FE9700957994 /* AppDelegate.swift */; };
 		2641DAD21D81FE9700957994 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2641DAD11D81FE9700957994 /* Assets.xcassets */; };
 		2641DAD51D81FE9700957994 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2641DAD31D81FE9700957994 /* LaunchScreen.storyboard */; };
@@ -43,6 +46,9 @@
 /* Begin PBXFileReference section */
 		262AF3741D821CD600171AC2 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		262AF3751D821CD600171AC2 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		262AF3781D8316E100171AC2 /* UserViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		262AF37B1D83212000171AC2 /* UserViewModelTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewModelTest.swift; sourceTree = "<group>"; };
+		262AF37D1D8321EB00171AC2 /* UsersDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersDataSource.swift; sourceTree = "<group>"; };
 		262EA40EB561F855D1D61C54 /* Pods-Test303.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test303.release.xcconfig"; path = "Pods/Target Support Files/Pods-Test303/Pods-Test303.release.xcconfig"; sourceTree = "<group>"; };
 		2641DAC71D81FE9700957994 /* Test303.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test303.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2641DACA1D81FE9700957994 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +123,16 @@
 			children = (
 				262AF3741D821CD600171AC2 /* MainViewController.swift */,
 				262AF3751D821CD600171AC2 /* MainViewController.xib */,
+				262AF3781D8316E100171AC2 /* UserViewModel.swift */,
+				262AF37D1D8321EB00171AC2 /* UsersDataSource.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		262AF37A1D831E6700171AC2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				262AF37B1D83212000171AC2 /* UserViewModelTest.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -265,6 +281,7 @@
 		2641DB0F1D820ACD00957994 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				262AF37A1D831E6700171AC2 /* Controllers */,
 				2641DB101D820ACD00957994 /* Network */,
 			);
 			path = App;
@@ -481,6 +498,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2641DAED1D81FFD400957994 /* API.swift in Sources */,
+				262AF3791D8316E100171AC2 /* UserViewModel.swift in Sources */,
 				2641DAF71D8200FA00957994 /* UserEntitiy.swift in Sources */,
 				2641DB141D820C6C00957994 /* UserService.swift in Sources */,
 				2641DB091D8206AB00957994 /* Mapper.swift in Sources */,
@@ -488,6 +506,7 @@
 				2641DAEE1D81FFD400957994 /* UsersAPI.swift in Sources */,
 				2641DB071D82065F00957994 /* UserMapper.swift in Sources */,
 				2641DB041D82059000957994 /* User.swift in Sources */,
+				262AF37E1D8321EB00171AC2 /* UsersDataSource.swift in Sources */,
 				2641DACB1D81FE9700957994 /* AppDelegate.swift in Sources */,
 				262AF3761D821CD600171AC2 /* MainViewController.swift in Sources */,
 			);
@@ -498,6 +517,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2641DAF41D82000500957994 /* UsersApiTest.swift in Sources */,
+				262AF37C1D83212000171AC2 /* UserViewModelTest.swift in Sources */,
 				2641DAFB1D82026000957994 /* UserEntityTest.swift in Sources */,
 				2641DB0B1D8207F000957994 /* UserMapperTest.swift in Sources */,
 				26FA0E0E1D8211FF00E680B1 /* UserServiceTest.swift in Sources */,

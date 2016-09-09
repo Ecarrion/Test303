@@ -12,7 +12,23 @@ import RxSwift
 class MainViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    let dataSource = UsersDataSource(cellIdentifier: "UsersCellIdentifier")
+    let disposeBag = DisposeBag()
+    let userNetworkService = UserService()
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.dataSource = dataSource
+        requestUserData()
+    }
+
+    func requestUserData() {
+
+        userNetworkService.getUsers().subscribeNext { [weak self] users in
+
+            self?.dataSource.users = users.map(UserViewModel.init)
+            self?.tableView.reloadData()
+
+        }.addDisposableTo(disposeBag)
     }
 }
