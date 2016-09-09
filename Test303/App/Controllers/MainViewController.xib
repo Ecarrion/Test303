@@ -28,6 +28,7 @@
                 <constraint firstItem="ezu-mb-D0D" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fmA-Ok-3B9"/>
                 <constraint firstItem="ezu-mb-D0D" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="qWF-tc-Xbc"/>
             </constraints>
+            <point key="canvasLocation" x="419" y="181"/>
         </view>
     </objects>
 </document>

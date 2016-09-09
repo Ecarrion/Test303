@@ -20,8 +20,13 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         tableView.dataSource = dataSource
         requestUserData()
+        styleTableViewEdges()
     }
 
+    func styleTableViewEdges() {
+        tableView.contentInset = UIEdgeInsetsMake(20, 0, 0, 0)
+    }
+    
     func requestUserData() {
 
         userNetworkService.getUsers().subscribeNext { [weak self] users in
